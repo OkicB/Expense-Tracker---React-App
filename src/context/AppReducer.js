@@ -1,5 +1,3 @@
-//Redux - kako specificiramo aplikacijske promjene statea
-//kao odgovor na određene akcije
 export default (state, action) => {
     switch(action.type) {
         case 'DELETE_TRANSACTION':
@@ -12,7 +10,7 @@ export default (state, action) => {
             return {
                 ...state,
                 transactions: [action.payload, ...state.transactions]
-            }//vraća transakcije koje su već tamo i dodaje nove koje su u payloadu
+            }
         default:
             return state;
     }
