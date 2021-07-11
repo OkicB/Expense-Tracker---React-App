@@ -4,7 +4,6 @@ import { GlobalContext } from '../context/GlobalState';
 
 export const TransactionList = () => {
     const { transactions } = useContext(GlobalContext);
-            //poziva transakcije koje su ustvari niz
     return (
         <>
             <h3>History</h3>
@@ -15,6 +14,4 @@ export const TransactionList = () => {
             </ul>
         </>
     )
-                //za svaku transakciju želimo ispisati list stavke
-                //transaction element mora znati koju specifičnu transakciju vratiti, zato je potrebno pozvati kao prop
 }
