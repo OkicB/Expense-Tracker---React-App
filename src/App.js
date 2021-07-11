@@ -6,16 +6,12 @@ import { IncomeExpenses } from './components/IncomeExpenses';
 import { TransactionList } from './components/TransactionList';
 import { AddTransaction } from './components/AddTransaction';
 import { GlobalProvider } from './context/GlobalState';
-        //    |
-        //   \ /
-        //omogućava kreiranje elemenata
 
 function App() {
   return (
     <GlobalProvider>
       <Header />
       <div className="container">
-        //pozivanje komponenata
         <Balance />
         <IncomeExpenses />
         <TransactionList />
