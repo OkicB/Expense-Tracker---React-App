@@ -13,4 +13,4 @@ export const Balance = () => {
             <h1>${total}</h1>
         </>
     )
-}//toFixed(2) - znači 2 decimalna mjesta
+}
