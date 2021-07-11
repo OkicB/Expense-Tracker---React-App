@@ -3,12 +3,10 @@ import { GlobalContext } from '../context/GlobalState';
 
 export const AddTransaction = () => {
     const [text, setText] = useState('');
-            //hooks, varijabla i funkcija
     const [amount, setAmount] = useState(0);
 
     const { addTransaction } = useContext(GlobalContext);
 
-    //dodavanje nove transakcije kada se submituje
     const onSubmit = e => {
         e.preventDefault();
 
@@ -37,9 +35,6 @@ export const AddTransaction = () => {
             </form>
         </>
     )
-    //prvi input učitava text varijablu - onChange kada god se updejtuje treba da ispiše taj dio statea
-    //pristupamo tome pozivajući funkciju setText i dobijamo pomoću event parametra u onChange 
-    //target.value - dat će šta god je napisano i postavit text
 
     //
 }
